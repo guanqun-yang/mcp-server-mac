@@ -1,0 +1,14 @@
+[project]
+name = "mcp_server_mac"
+version = "0.0.1"
+description = "An MCP Server that Returns the MAC Address."
+dependencies = [
+    "mcp>=1.4.1",
+]
+
+[project.scripts]
+YOUR_SCRIPT_NAME = "mcp_server_mac:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
