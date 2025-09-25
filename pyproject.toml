@@ -7,7 +7,7 @@ dependencies = [
 ]
 
 [project.scripts]
-YOUR_SCRIPT_NAME = "mcp_server_mac:main"
+mcp-server-mac = "mcp_server_mac:main"
 
 [build-system]
 requires = ["hatchling"]
