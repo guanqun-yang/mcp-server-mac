@@ -15,4 +15,4 @@ ENV PORT=8000
 
 EXPOSE 8000
 
-ENTRYPOINT ["mcp-server-mac"]
+CMD ["python", "-m", "mcp_server_mac"]
