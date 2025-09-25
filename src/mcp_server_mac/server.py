@@ -6,7 +6,7 @@ import uuid
 host = os.environ.get("HOST", "0.0.0.0")
 port = int(os.environ.get("PORT", 8000))
 
-mcp = FastMCP("mcp-server-mac", host=host, port=port)
+mcp = FastMCP("mcp_server_mac", host=host, port=port)
 
 @mcp.tool()
 async def get_mac_address() -> str:
