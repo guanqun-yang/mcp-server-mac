@@ -9,8 +9,9 @@ port = int(os.environ.get("PORT", 8000))
 mcp = FastMCP("mcp_server_mac", host=host, port=port)
 
 @mcp.tool()
-async def get_mac_address() -> str:
+async def get_mac_address(query: str) -> str:
     """Return the MAC address of the current machine."""
+
     mac = uuid.getnode()
     mac_str = ':'.join(f'{(mac >> ele) & 0xff:02x}' for ele in range(40, -1, -8))
     return mac_str
